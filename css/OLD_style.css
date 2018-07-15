@@ -1,0 +1,102 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+ font-family: system-ui, sans-serif;
+  background-color: #dadada;
+  background-color: #fff;
+  display: block;
+  min-height: 100px;
+  flex-direction: row;
+  font-size: 75%;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
+  padding: 1em;
+  margin: 8px;
+}
+
+.container {
+  text-align: left;
+  color: black;
+  background-color: #fff;
+  background-color: #dadada;
+  max-width: 400px; /* max-width: 400px; */
+  width: 100%; /* min-width: 200px; */
+  height: auto;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 20px 25px;
+  margin: 0px auto;
+  margin: 20px auto;
+  }
+
+.preview {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-left: 1% 0;
+ }
+
+/* code added to create one-column design */
+@media screen and (min-width: 575px) {
+.preview {
+  display: inline-block;
+  float: center;
+  margin: 1%;
+  width: 48%;
+  padding: 0 4px;
+  font-size: 1em;
+ }
+}
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 991px) {
+  .preview {
+     padding-left: 5%;
+     display: inline-block;
+     margin: 1%;
+     width: 20%;
+   }
+}
+
+h1 {
+ font-size: 2.5em;
+ font-weight: 400;
+ margin: 0;
+ position: absolute;
+ text-align: left;
+ text-align: center;
+ text-indent: 15px;
+}
+
+h3 {
+   font-size: 1.8em;
+   font-weight: 500px
+}
+
+.baku {
+     background: url('../images/baku.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.london {
+     background: url('../images/london.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.madrid {
+   background: url('../images/madrid.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.rome {
+    background: url('../images/rome.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
