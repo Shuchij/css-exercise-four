@@ -3,77 +3,99 @@
 }
 
 body {
- font-family: system-ui, sans-serif;
-  background-color: #dadada;
-  background-color: #fff;
-  display: block;
+  font-family: system-ui, sans-serif;
+  background-color: #FFFAFA;
   min-height: 100px;
-  flex-direction: row;
   font-size: 75%;
-  font-weight: 400;
-  line-height: 1.45;
-  text-align: left;
+  font-weight: 500;
   padding: 1em;
-  margin: 10px;
 }
 
 .container {
-  text-align: left;
   color: black;
-  background-color: #fff;
-  background-color: #dadada;
-  max-width: 500px; /* max-width: 400px; */
-  width: 100%; /* min-width: 200px; */
-  height: inherit;
-  font-family: sans-serif;
-  font-weight: lighter;
-  margin: 10px auto;
-
+  background-color: #E5E8E8;
+  max-width: 400px; /* min-width: 200px; */
+  margin: auto;
+  width: 100%;
   }
 
 .preview {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
   height: 0;
-  padding-top: 66.64%;
-
+  padding-top: 48%;
 }
 
- h1 {
+/* code added to create two-column design for tablets */
+@media screen and (min-width: 575px) {
+.container {
+  margin: 40%;
+  width: 90%;
+  float: left;
+  margin-left: 25%;
+ }
+
+ .preview {
+   margin: 10%;
+   width: 70%;
+   margin-left: 20%;
+ }
+
+/* code added to create four-column design for laptops*/
+@media screen and (min-width: 991px) {
+
+  .preview {
+    margin: 10%;
+    width: 90%;
+    margin-left: 20%;
+  }
+
+  .container {
+    margin: 10%;
+    width: 100%;
+    margin-top:0%;
+    margin-left: 45%;
+  }
+}
+
+h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 1.5em;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
  }
 
  .preview h1 {
-     text-transform: capitalize;
-     text-align: left;
-     font-size: 2em;
+    text-transform: capitalize;
+    text-align: left;
+    padding-left: 2%;
+    font-size: 1.3em;
  }
 
 .baku {
      background-image: url('../images/baku.jpg');
-     background-repeat: no-repeat;
-     background-size: contain;
-
+      /* I feel below 2 attributes can be moved out of here and added to .preview as it is common to all 4 locations, but it didn't workwhen I tried it */
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-top: 40%;
 }
 
 .london {
      background: url('../images/london.png');
      background-repeat: no-repeat;
+     background-size: contain;
+     padding-top: 40%;
 }
 
 .madrid {
    background: url('../images/madrid.jpg');
    background-repeat: no-repeat;
+   background-size: contain;
+   padding-top: 35%;
 }
 
 .rome {
     background: url('../images/rome.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
+    padding-top: 37%;
 }
